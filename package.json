@@ -22,6 +22,7 @@
     "rollup": "^2.33.3"
   },
   "devDependencies": {
-    "rollup-plugin-livereload": "^2.0.0"
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.1.0"
   }
 }

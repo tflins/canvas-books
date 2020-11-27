@@ -1,4 +1,5 @@
 import livereload from 'rollup-plugin-livereload'
+import serve from 'rollup-plugin-serve'
 
 const config = {
   input: './src/main.js',
@@ -12,12 +13,13 @@ const config = {
   ],
 
   plugins: [
-    livereload({
+    serve({
       open: true,
       openPage: '/public/index.html',
       port: 3000,
       contentBase: ''
-    })
+    }),
+    livereload()
   ]
 }
 
